@@ -12,7 +12,7 @@ L'obiettivo principale di UniRideATM è quello di semplificare il processo di pi
 - **Informazioni su misura**: L'utente riceve soltanto informazioni riguardo le linee che collegano le due mete.
 
 ## Tecnologie utilizzate
-UniRideATM è stato sviluppato utilizzando Python, con il supporto della libreria `python-telegram-bot` per l'integrazione con Telegram. Le informazioni sugli orari dei bus sono state estrapolate direttamente dal sito delle *smart poles* dell'[ATM](https://www.atmmessinaspa.it/smartpoles2.php), e organizzate in modo da essere facilmente accessibili e comprensibili dall'utente.
+UniRideATM è stato sviluppato utilizzando Python, con il supporto della libreria `python-telegram-bot` per l'integrazione con Telegram. Le informazioni sugli orari dei bus sono state estrapolate direttamente dal sito delle *smart poles* dell'[ATM](https://www.atmmessinaspa.it/smartpoles2.php), tramite `BeautifulSoup4` e organizzate in modo da essere facilmente accessibili e comprensibili dall'utente.
 ## Installazione
 Passaggi necessari per l’installazione e l’avvio di UniRideATM:
 1. **Clonazione del repository**
@@ -26,6 +26,7 @@ Passaggi necessari per l’installazione e l’avvio di UniRideATM:
 3. **Installazione le dipendenze necessarie**
    ```bash
    pip install python-telegram-bot
+   pip install beautifulsoup4
    ``` 
 4. **Configurazione del bot**
    I parametri di configurazione sono presenti all’interno del file `.env`
